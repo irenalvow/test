@@ -1,0 +1,149 @@
+body {
+	background-color: #AE95AE;
+	margin: 0;
+	font-family: "PT Sans", "Arial", serif;
+}
+
+.page {
+	position: relative;
+	width: 920px;
+	margin: 40px auto 20px;
+	background-color: white;
+	box-shadow: 15px -15px 25px 10px rgba(91,88,91,0.42);
+	color: #6e7678;
+}
+
+.left {
+	width: 40%;
+	text-align: center;
+}
+
+.right {
+	width: 60%;
+	padding-left: 50px;
+	padding-right: 50px;
+	box-sizing: border-box;
+}
+
+.left, .right {
+	float: left;
+	margin: 100px auto 70px;
+}
+
+.page::after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
+.right::after {
+	display: block;
+	content: '';
+	position: absolute;
+	width: 3px;
+	background-color: #AE95AE;
+	top: 100px;
+	bottom: 70px;
+	margin-left: -50px;
+}
+
+.photo img {
+	border-radius: 50%; 
+    border: 3px solid #582E58;
+    padding: 10px; 
+}
+
+.name h2 {
+	font-size: 25pt;
+	margin-bottom: -15px;
+	color: #6e7678;	
+	font-weight: normal;
+	text-transform: uppercase;	
+}
+
+.name h2:last-child {
+	font-weight: bold;
+	font-size: 19pt;
+	margin-bottom: 20px;
+	color: #582E58;
+	letter-spacing: 4px;
+}
+
+.contacts {
+	float: left;
+	margin-left: 40px; 
+}
+
+.contacts img {
+	width: 32px;
+	height: 32px;
+}
+
+.contacts p {
+	position: relative;	
+    padding-left: 40px;
+    margin: 27px 0;
+	text-align: left;
+}
+
+.contacts img {
+	position: absolute;
+	left: 0;
+	top: 50%;
+    margin-top: -16px;
+}
+
+a {
+	text-decoration: none;
+	color: #582E58;
+}
+
+.header h2 {
+	position: relative;
+	font-size: 25pt;
+	text-align: center;
+	color: #6e7678;
+	margin-top: 40px;
+	margin-bottom: -10px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.header h2 span {
+	background: white;
+	position: relative;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.header h2::before {
+	position: absolute;
+	display: block;
+	content: '';
+	background-color: #AE95AE;
+	height: 3px;
+	top: 50%;
+	left: 0;
+	right: 0;
+	margin-top: -1.5px;
+}
+
+h3 {
+	text-transform: uppercase;
+	color: #582E58;
+	margin-bottom: -10px;
+	margin-top: 40px;
+	letter-spacing: 4px;
+}
+
+.right p {
+	text-indent: 20px;
+}
+
+.right p span {
+	font-weight: bold;
+}
+
+.right li {
+	margin-bottom: 12px;
+}
